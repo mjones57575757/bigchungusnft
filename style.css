@@ -1,0 +1,48 @@
+.rotate {
+  animation: rotation 5s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+
+@keyframes effect {
+            0% {
+                background: linear-gradient(
+                        #008000, #00FF00);
+                -webkit-background-clip: text;
+            }
+ 
+            100% {
+                background: linear-gradient(
+                        #3CE7D7, #000FFF);
+                -webkit-background-clip: text;
+            }
+        }
+
+body {
+    background-color:#03030a;
+    min-width: 800px;
+    min-height: 400px
+}
+img {
+    width:20%;
+    float:left; 
+     margin:0;
+}
+
+.saturate { filter: saturate(3); animation: rotation 5s infinite linear;}
+.grayscale { filter: grayscale(100%); animation: rotation 5s infinite linear;}
+.contrast { filter: contrast(160%); animation: rotation 5s infinite linear;}
+.brightness { filter: brightness(0.25); animation: rotation 5s infinite linear;}
+.blur { filter: blur(3px); animation: rotation 5s infinite linear;}
+.invert { filter: invert(100%); animation: rotation 5s infinite linear;}
+.sepia { filter: sepia(100%); animation: rotation 5s infinite linear;}
+.huerotate { filter: hue-rotate(180deg); animation: rotation 5s infinite linear;}
+.rss.opacity { filter: opacity(50%); animation: rotation 5s infinite linear;}
